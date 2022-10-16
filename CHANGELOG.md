@@ -1,5 +1,3 @@
-## [Unreleased]
+## [4.5.0] - 2022-08-05
 
-## [0.1.0] - 2022-08-05
-
-- Initial release
+- Extract Spree Api V1 from Spree Api

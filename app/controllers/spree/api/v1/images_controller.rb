@@ -1,7 +1,7 @@
 module Spree
   module Api
     module V1
-      class ImagesController < Spree::Api::BaseController
+      class ImagesController < Spree::Api::V1::BaseController
         def index
           @images = scope.images.accessible_by(current_ability)
           respond_with(@images)

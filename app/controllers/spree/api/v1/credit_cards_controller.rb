@@ -1,7 +1,7 @@
 module Spree
   module Api
     module V1
-      class CreditCardsController < Spree::Api::BaseController
+      class CreditCardsController < Spree::Api::V1::BaseController
         before_action :user
 
         def index

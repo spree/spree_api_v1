@@ -1,7 +1,7 @@
 module Spree
   module Api
     module V1
-      class StatesController < Spree::Api::BaseController
+      class StatesController < Spree::Api::V1::BaseController
         skip_before_action :authenticate_user
 
         def index

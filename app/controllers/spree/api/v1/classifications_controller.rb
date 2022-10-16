@@ -1,7 +1,7 @@
 module Spree
   module Api
     module V1
-      class ClassificationsController < Spree::Api::BaseController
+      class ClassificationsController < Spree::Api::V1::BaseController
         def update
           authorize! :update, Product
           authorize! :update, Taxon

@@ -1,7 +1,7 @@
 module Spree
   module Api
     module V1
-      class ProductPropertiesController < Spree::Api::BaseController
+      class ProductPropertiesController < Spree::Api::V1::BaseController
         before_action :find_product, :authorize_product!
         before_action :product_property, only: [:show, :update, :destroy]
 

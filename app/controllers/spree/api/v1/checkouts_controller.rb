@@ -1,7 +1,7 @@
 module Spree
   module Api
     module V1
-      class CheckoutsController < Spree::Api::BaseController
+      class CheckoutsController < Spree::Api::V1::BaseController
         before_action :load_order_with_lock, only: [:next, :advance, :update]
 
         def next

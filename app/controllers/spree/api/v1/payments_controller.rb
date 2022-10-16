@@ -1,7 +1,7 @@
 module Spree
   module Api
     module V1
-      class PaymentsController < Spree::Api::BaseController
+      class PaymentsController < Spree::Api::V1::BaseController
         before_action :find_order
         before_action :find_payment, only: [:update, :show, :authorize, :purchase, :capture, :void]
 

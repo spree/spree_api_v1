@@ -1,7 +1,7 @@
 module Spree
   module Api
     module V1
-      class StoresController < Spree::Api::BaseController
+      class StoresController < Spree::Api::V1::BaseController
         before_action :get_store, except: [:index, :create]
 
         def index

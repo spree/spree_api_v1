@@ -1,7 +1,7 @@
 module Spree
   module Api
     module V1
-      class ProductsController < Spree::Api::BaseController
+      class ProductsController < Spree::Api::V1::BaseController
         before_action :find_product, only: [:update, :show, :destroy]
 
         def index

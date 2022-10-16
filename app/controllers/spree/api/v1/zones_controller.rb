@@ -1,7 +1,7 @@
 module Spree
   module Api
     module V1
-      class ZonesController < Spree::Api::BaseController
+      class ZonesController < Spree::Api::V1::BaseController
         def create
           authorize! :create, Zone
           @zone = Spree::Zone.new(zone_params)
@@ -39,7 +39,7 @@ module Spree
         private
 
         def zone_params
-          attrs = params.require(:zone).permit!
+          attrs = params.require(:zone).permit!.to_h
           if attrs[:zone_members]
             attrs[:zone_members_attributes] = attrs.delete(:zone_members)
           end

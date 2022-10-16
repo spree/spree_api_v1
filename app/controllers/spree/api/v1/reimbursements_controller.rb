@@ -1,7 +1,7 @@
 module Spree
   module Api
     module V1
-      class ReimbursementsController < Spree::Api::BaseController
+      class ReimbursementsController < Spree::Api::V1::BaseController
         def index
           collection(Spree::Reimbursement)
           respond_with(@collection)

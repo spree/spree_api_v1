@@ -1,7 +1,7 @@
 module Spree
   module Api
     module V1
-      class OptionValuesController < Spree::Api::BaseController
+      class OptionValuesController < Spree::Api::V1::BaseController
         def index
           @option_values = if params[:ids]
                              scope.where(id: params[:ids])

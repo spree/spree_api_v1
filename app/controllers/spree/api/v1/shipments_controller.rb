@@ -1,7 +1,7 @@
 module Spree
   module Api
     module V1
-      class ShipmentsController < Spree::Api::BaseController
+      class ShipmentsController < Spree::Api::V1::BaseController
         before_action :find_and_update_shipment, only: [:ship, :ready, :add, :remove]
         before_action :load_transfer_params, only: [:transfer_to_location, :transfer_to_shipment]
 

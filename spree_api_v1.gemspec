@@ -1,13 +1,10 @@
 # encoding: UTF-8
-lib = File.expand_path('../lib/', __FILE__)
-$LOAD_PATH.unshift lib unless $LOAD_PATH.include?(lib)
-
-require 'spree_api_v1/version'
+require_relative 'lib/spree/api_v1/version'
 
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_api_v1'
-  s.version     = SpreeApiV1.version
+  s.version     = Spree::ApiV1.version
   s.summary     = 'Add extension summary here'
   s.description = 'Add (optional) extension description here'
   s.required_ruby_version = '>= 2.5'
@@ -33,6 +30,6 @@ Gem::Specification.new do |s|
   # s.add_dependency 'doorkeeper', '~> 5.3'
   # s.add_dependency 'jsonapi-serializer', '~> 2.1'
   s.add_dependency 'rabl', '~> 0.14', '>= 0.14.2'
-  # s.add_dependency 'responders'
+  s.add_dependency 'responders'
 
 end

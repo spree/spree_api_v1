@@ -1,7 +1,7 @@
 module Spree
   module Api
     module V1
-      class LineItemsController < Spree::Api::BaseController
+      class LineItemsController < Spree::Api::V1::BaseController
         class_attribute :line_item_options
 
         self.line_item_options = []

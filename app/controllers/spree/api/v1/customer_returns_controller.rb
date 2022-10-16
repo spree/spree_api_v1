@@ -1,7 +1,7 @@
 module Spree
   module Api
     module V1
-      class CustomerReturnsController < Spree::Api::BaseController
+      class CustomerReturnsController < Spree::Api::V1::BaseController
         def index
           collection(Spree::CustomerReturn)
           respond_with(@collection)

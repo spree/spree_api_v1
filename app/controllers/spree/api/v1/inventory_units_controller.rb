@@ -1,7 +1,7 @@
 module Spree
   module Api
     module V1
-      class InventoryUnitsController < Spree::Api::BaseController
+      class InventoryUnitsController < Spree::Api::V1::BaseController
         before_action :prepare_event, only: :update
 
         def show

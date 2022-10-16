@@ -119,6 +119,5 @@ Spree::Core::Engine.add_routes do
       put '/classifications', to: 'classifications#update', as: :classifications
       get '/taxons/products', to: 'taxons#products', as: :taxon_products
     end
-
   end
 end

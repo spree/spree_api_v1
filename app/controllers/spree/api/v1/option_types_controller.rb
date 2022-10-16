@@ -1,7 +1,7 @@
 module Spree
   module Api
     module V1
-      class OptionTypesController < Spree::Api::BaseController
+      class OptionTypesController < Spree::Api::V1::BaseController
         def index
           @option_types =  if params[:ids]
                              Spree::OptionType.

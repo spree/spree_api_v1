@@ -1,7 +1,7 @@
 module Spree
   module Api
     module V1
-      class PromotionsController < Spree::Api::BaseController
+      class PromotionsController < Spree::Api::V1::BaseController
         before_action :requires_admin
         before_action :load_promotion
 

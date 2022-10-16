@@ -1,7 +1,7 @@
 module Spree
   module Api
     module V1
-      class AddressesController < Spree::Api::BaseController
+      class AddressesController < Spree::Api::V1::BaseController
         before_action :find_order
 
         def show

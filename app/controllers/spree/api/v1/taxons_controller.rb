@@ -1,7 +1,7 @@
 module Spree
   module Api
     module V1
-      class TaxonsController < Spree::Api::BaseController
+      class TaxonsController < Spree::Api::V1::BaseController
         def index
           @taxons = if taxonomy
                       taxonomy.root.children

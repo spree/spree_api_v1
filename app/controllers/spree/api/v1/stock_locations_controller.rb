@@ -1,7 +1,7 @@
 module Spree
   module Api
     module V1
-      class StockLocationsController < Spree::Api::BaseController
+      class StockLocationsController < Spree::Api::V1::BaseController
         def index
           authorize! :index, StockLocation
           @stock_locations = StockLocation.accessible_by(current_ability).order('name ASC').
