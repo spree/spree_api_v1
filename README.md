@@ -1,6 +1,6 @@
 # Spree Api V1
 
-Introduction goes here.
+This repository contains the deprecated V1 API, that was extracted from spree_api gem in Spree 4.5.
 
 ## Installation
 
