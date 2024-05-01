@@ -31,7 +31,7 @@ group :test do
   gem 'rspec-rails', '~> 5.0'
   gem 'rspec-retry'
   gem 'rspec_junit_formatter'
-  gem 'simplecov', '0.17.1'
+  gem 'simplecov', '0.22.0'
   gem 'webmock', '~> 3.7'
   gem 'timecop'
   gem 'rails-controller-testing'
